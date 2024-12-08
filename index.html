@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bulma css template -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  <title>
+   GE3D
+  </title>
+  <link rel="icon" href="dragon.ico">
+</head>
+<body>
+  <section class="section">
+
+  <div class="container has-text-centered">
+    <!-- paper title -->
+    <p class="title is-3 has-text-weight-bold">Enhanced 3D Generation by 2D Editing</p>
+    <!-- publication -->
+    <!-- <p class="subtitle is-4"> ECCV 2024, Milan </p>-->
+    <!-- authors -->
+    <p class="title is-5 mt-2"> 
+      <a href="https://scholar.google.com/citations?user=Rxl8r70AAAAJ&hl=en" target="_blank">Haoran Li</a><sup>1</sup>, 
+      <a href="https://scholar.google.com/citations?user=Rxl8r70AAAAJ&hl=en" target="_blank">Yuli Tian</a><sup>1</sup>, 
+      <a href="https://scholar.google.com/citations?user=_wuoU1EAAAAJ&hl=en" target="_blank">Yong Liao</a><sup>1</sup><sup>*</sup>, 
+      <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en" target="_blank">Lin Wang</a><sup>2</sup>, 
+      <a href="https://scholar.google.com/citations?user=D1HTbhEAAAAJ&hl=en" target="_blank">Yuyang Wang</a><sup>3</sup>, 
+      <a href="https://scholar.google.com/citations?user=6n-ELeoAAAAJ&hl=en" target="_blank">Peng Yuan Zhou</a><sup>4</sup>
+
+    </p>
+    <!-- affiliations -->
+    <p class="subtitle is-5"> 
+      <sup>1</sup> University of Science and Technology of China &nbsp;
+      <sup>2</sup> Nanyang Technological University &nbsp;
+      <br/>
+      <sup>3</sup> The Hong Kong University of Science and Technology (Guangzhou) &nbsp;
+      <sup>4</sup> Aarhus University &nbsp;
+    </p>
+
+    <!-- other links -->
+    <div class="is-flex is-justify-content-center">
+      <span class="icon-text mx-1">
+        <a class="button is-dark" href="" role="button" target="_blank"> <span class="icon"> <ion-icon name="document-text-outline"></ion-icon> </span> <span> arXiv </span>  </a> 
+      </span>
+      <span class="icon-text mx-1">
+        <a class="button is-dark" href="" role="button" target="_blank"> <span class="icon"> <ion-icon name="logo-github"></ion-icon> </span> <span> Code </span> </a> 
+      </span>
+    </div>
+  </div>
+
+  <!-- main container -->
+  <div class="container is-max-desktop has-text-centered">
+
+    <!-- abstract -->
+    <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
+    <p class="content is-size-6 has-text-left">
+      Distilling 3D representations from pretrained 2D diffusion models is essential for 3D creative applications across gaming, film, and interior design. Current SDS-based methods are hindered by inefficient information distillation from diffusion models, which prevents the creation of photorealistic 3D contents. Our research reevaluates the SDS approach by analyzing its fundamental nature as a basic image editing process that commonly results in over-saturation, over-smoothing and lack of rich content due to the poor-quality single-step denoising. To address these limitations, we propose GE3D (3D Generation by Editing). Each iteration of GE3D utilizes a 2D editing framework that combines a noising trajectory to preserve the information of the input image, alongside a text-guided denoising trajectory. We optimize the process by aligning the latents across both trajectories. This approach fully exploits pretrained diffusion models to distill multi-granularity information through multiple denoising steps, resulting in photorealistic 3D outputs. Both theoretical and experimental results confirm the effectiveness of our approach, which not only advances 3D  generation technology  but also establishes a novel connection between 3D generation and 2D editing. This could potentially inspire further research in the field. 
+    </p>
+    
+    <!-- results (videos) -->
+    <p class="title is-3 mt-5 has-text-centered"> Photorealistic Quality in Text-to-3D </p>
+    <p class="content has-text-centered is-size-5">
+    <i>GE3D resolves the issues of over-saturation and over-smoothing  typically found in SDS-based generation methods, achieving photorealistic quality in 3D content generation.</i>
+    </p>
+    <table class="table" style="table-layout: fixed; width:100%;">
+      <tbody>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/swaroski_earring.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Bulgari_bracelet.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Rolex_watch.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/wallet.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> Swarovski crystal earrings, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Bulgari bracelet, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Rolex watch with gold and diamonds, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> A leather wallet, minimalist design, brown color, 8K, HDR. </td>
+      </tr>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/wooden_rocking_chair.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/vintage_writing_desk.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/radio.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/latern.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> A wooden rocking chair, rustic, comfortable, 8K. </td>
+        <td class="has-text-centered is-size-7"> A vintage writing desk, wooden, detailed carvings, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> A vintage radio, wooden case, retro design, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> A decorative lantern, red, warm lighting, 8K, HDR. </td>
+      </tr>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/giraffe_scarf.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/sceramic_snail.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/squirrel.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/fire_dragon.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> A giraffe with a scarf, cozy, realistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> A ceramic snail, its shell painted in bright, swirling colors. </td>
+        <td class="has-text-centered is-size-7"> A fluffy squirrel wearing a tiny wizard hat. </td>
+        <td class="has-text-centered is-size-7">A western dragon with fire, covered in scales, 8K. </td>
+      </tr>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/stuffed_bunny.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/elephant.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/dinosaur.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/wooden_train_set.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> A soft stuffed toy bunny with long ears. </td>
+        <td class="has-text-centered is-size-7"> A wooden elephant, carved from a single block of mahogany with a glossy finish. </td>
+        <td class="has-text-centered is-size-7"> A DSLR of photo of a robot dinosaur. </td>
+        <td class="has-text-centered is-size-7"> A classic wooden toy train set with brightly colored carriages and tracks. </td>
+      </tr>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/BlackWidow.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Captain_America.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/IronMan.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Joker_head.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> Black Widow in Marvel, head, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Captain America, head, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> A portrait of IRONMAN with white hair, head, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Zombie JOKER, head, photorealistic, 8K, HDR. </td>
+      </tr>
+      <tr>
+        <th> <video muted autoplay loop> <source src="videos/Medieval_knight.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Ninja.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Woody.mp4" type="video/mp4"> </video> </th>
+        <th> <video muted autoplay loop> <source src="videos/Harry_Potter.mp4" type="video/mp4"> </video> </th>
+      </tr>
+      <tr>
+        <td class="has-text-centered is-size-7"> Medieval knight in full armor, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Ninja in black outfit, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Woody in Disney, photorealistic, 8K, HDR. </td>
+        <td class="has-text-centered is-size-7"> Harry Potter with a wand, photorealistic, 8K, HDR. </td>
+      </tr>
+    </table>
+
+    <p class="title is-3 mt-5 has-text-centered"> Approach </p>
+    <a href="images/overview.pdf">
+      <img src="images/overview.png" alt="Approach of DreamScene"/>
+    </a>
+    <p class="content has-text-left is-size-6">
+      The overview of GE3D. We integrated the 2D editing process into 3D generation. Unlike the single-step editing in SDS in DreamFusion and ISM in LucidDreamer, we used multi-step editing with latents alignment to combine different granularities of information from the pre-trained 2D diffusion model into the 3D representation, achieving high-quality generation.
+    </p>
+
+    <!--<p class="title is-3 mt-5 has-text-centered"> Video </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yc4MOks4ATI?si=0ppkCf5g52A95d5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <!-- citation -->
+    <!--<div class="card mt-4">
+      <header class="card-header">
+        <p class="card-header-title"> Citation </p>
+      </header>
+      <div class="card-content is-size-5 has-text-left">
+<pre><code>
+  @article{li2024dreamscene,
+    title={DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling},
+    author={Li, Haoran and Shi, Haolin and Zhang, Wenli and Wu, Wenjun and Liao, Yong and Wang, Lin and Lee, Lik-hang and Zhou, Pengyuan},
+    journal={arXiv preprint arXiv:2404.03575},
+    year={2024}
+  }</code></pre>
+      </div>
+    </div> -->
+
+  </div>
+  </section>
+</body>
+</html>
