@@ -3,7 +3,7 @@
 
 This repository contains the official implementation for [Enhanced 3D Generation by 2D Editing](https://arxiv.org/pdf/2412.05929).
 
-[![Project Page](https://img.shields.io/badge/Project-Website-green)](https://jahnsonblack.github.io/GE3D/) [![arXiv](https://img.shields.io/badge/arXiv-2404.03575-b31b1b.svg)](https://arxiv.org/pdf/2412.05929)
+[![Project Page](https://img.shields.io/badge/Project-Website-green)](https://jahnsonblack.github.io/GE3D/) [![arXiv](https://img.shields.io/badge/arXiv-2412.05929-b31b1b.svg)](https://arxiv.org/pdf/2412.05929)
 
 Note: We compress these motion pictures for faster previewing. More high-quality 3D results can be found on our project homepage [GE3D](https://jahnsonblack.github.io/GE3D/).
  <table class="center">
