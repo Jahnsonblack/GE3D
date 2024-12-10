@@ -1,4 +1,4 @@
-# GE3D
+# Enhanced 3D Generation by 2D Editing
 [Haoran Li](https://scholar.google.com/citations?user=Rxl8r70AAAAJ&hl=en), [Yuli Tian](https://github.com/lili174311), [Yong Liao](https://scholar.google.com/citations?user=_wuoU1EAAAAJ&hl=en),[Lin Wang](https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en), [Yuyang Wang](https://scholar.google.com/citations?user=D1HTbhEAAAAJ&hl=en), [Peng Yuan Zhou](https://scholar.google.com/citations?user=6n-ELeoAAAAJ&hl=en)
 
 This repository contains the official implementation for [Enhanced 3D Generation by 2D Editing](https://arxiv.org/pdf/2412.05929).
