@@ -76,3 +76,13 @@ This work is built on many amazing research works and open-source projects :
 
 Thanks for their excellent work and great contribution to 3D generation area.
 
+## Citation
+If you find it useful in your research, please consider citing our paper as follows:
+```
+@article{li2024enhanced,
+  title={Enhanced 3D Generation by 2D Editing},
+  author={Li, Haoran and Tian, Yuli and Liao, Yong and Wang, Lin and Wang, Yuyang and Zhou, Peng Yuan},
+  journal={arXiv preprint arXiv:2412.05929},
+  year={2024}
+}
+```
