@@ -52,9 +52,7 @@ mkdir point_e_model_cache
 wget https://huggingface.co/datasets/tiange/Cap3D/resolve/main/misc/our_finetuned_models/pointE_finetuned_with_825kdata.pth
 mv pointE_finetuned_with_825kdata.pth point_e_model_cache/
 # Modify the parameter init_guided in the configuration file to pointe_825k
-
 # or
-
 wget https://huggingface.co/datasets/tiange/Cap3D/resolve/main/misc/our_finetuned_models/pointE_finetuned_with_330kdata.pth
 mv pointE_finetuned_with_330kdata.pth point_e_model_cache/
 # Modify the parameter init_guided in the configuration file to pointe_330k
