@@ -1,7 +1,7 @@
-# Enhanced 3D Generation by 2D Editing
-[Haoran Li](https://scholar.google.com/citations?user=Rxl8r70AAAAJ&hl=en), [Yuli Tian](https://github.com/lili174311), [Yong Liao](https://scholar.google.com/citations?user=_wuoU1EAAAAJ&hl=en),[Lin Wang](https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en), [Yuyang Wang](https://scholar.google.com/citations?user=D1HTbhEAAAAJ&hl=en), [Peng Yuan Zhou](https://scholar.google.com/citations?user=6n-ELeoAAAAJ&hl=en)
+# Text-to-3D Generation by 2D Editing
+[Haoran Li](https://scholar.google.com/citations?user=Rxl8r70AAAAJ&hl=en), [Yuli Tian](https://github.com/lili174311), [Yonghui Wang](https://scholar.google.com.hk/citations?user=GGMWna4AAAAJ&hl=zh-CN), [Yong Liao](https://scholar.google.com/citations?user=_wuoU1EAAAAJ&hl=en), [Lin Wang](https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en), [Yuyang Wang](https://scholar.google.com/citations?user=D1HTbhEAAAAJ&hl=en), [Peng Yuan Zhou](https://scholar.google.com/citations?user=6n-ELeoAAAAJ&hl=en)
 
-This repository contains the official implementation for [Enhanced 3D Generation by 2D Editing](https://arxiv.org/pdf/2412.05929).
+This repository contains the official implementation for [Text-to-3D Generation by 2D Editing](https://arxiv.org/pdf/2412.05929).
 
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://jahnsonblack.github.io/GE3D/) [![arXiv](https://img.shields.io/badge/arXiv-2412.05929-b31b1b.svg)](https://arxiv.org/pdf/2412.05929)
 
@@ -47,6 +47,7 @@ pip install -e .
 ```
 
 ```sh
+cd GE3D
 mkdir point_e_model_cache
 # Optional: Initialize with better point-e
 wget https://huggingface.co/datasets/tiange/Cap3D/resolve/main/misc/our_finetuned_models/pointE_finetuned_with_825kdata.pth
