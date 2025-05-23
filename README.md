@@ -78,14 +78,12 @@ Thanks for their excellent work and great contribution to 3D generation area.
 ## Citation
 If you find it useful in your research, please consider citing our paper as follows:
 ```
-@misc{li2024text2d3d,
+@article{li2024text2d3d,
   title={Text-to-3D Generation by 2D Editing},
-  author={Haoran Li and Yuli Tian and Yonghui Wang and Yong Liao and Lin Wang and Yuyang Wang and Peng Yuan Zhou},
-  year={2024},
-  eprint={2412.05929},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  note={\url{https://arxiv.org/abs/2412.05929}}
+  author={Li, Haoran and Tian, Yuli and Wang, Yonghui and Liao, Yong and Wang, Lin and Wang, Yuyang and Zhou, Peng Yuan},
+  journal={arXiv preprint arXiv:2412.05929},
+  year={2024}
 }
+
 
 ```
